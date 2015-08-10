@@ -18,7 +18,8 @@
 		3DD7EBEE1B784F380042CC1D /* ParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBED1B784F380042CC1D /* ParkingViewController.swift */; };
 		3DD7EBF01B784F7B0042CC1D /* ArtistSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBEF1B784F7B0042CC1D /* ArtistSearchViewController.swift */; };
 		3DD7EBF21B784F880042CC1D /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBF11B784F880042CC1D /* ArtistDetailViewController.swift */; };
-		3DD7EBF61B785B800042CC1D /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBF51B785B800042CC1D /* ActivitiesViewController.swift */; };
+		3DD7EBF61B785B800042CC1D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBF51B785B800042CC1D /* ActivityViewController.swift */; };
+		3DD7EBF81B7860850042CC1D /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBF71B7860850042CC1D /* ActivityDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,8 @@
 		3DD7EBED1B784F380042CC1D /* ParkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingViewController.swift; sourceTree = "<group>"; };
 		3DD7EBEF1B784F7B0042CC1D /* ArtistSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistSearchViewController.swift; sourceTree = "<group>"; };
 		3DD7EBF11B784F880042CC1D /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
-		3DD7EBF51B785B800042CC1D /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		3DD7EBF51B785B800042CC1D /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		3DD7EBF71B7860850042CC1D /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				3DD7EBCB1B783E5D0042CC1D /* Main.storyboard */,
-				3DD7EBF51B785B800042CC1D /* ActivitiesViewController.swift */,
+				3DD7EBF51B785B800042CC1D /* ActivityViewController.swift */,
 				3DD7EBF11B784F880042CC1D /* ArtistDetailViewController.swift */,
 				3DD7EBEF1B784F7B0042CC1D /* ArtistSearchViewController.swift */,
+				3DD7EBF71B7860850042CC1D /* ActivityDetailViewController.swift */,
 				3DD7EBEB1B784F230042CC1D /* TicketsViewController.swift */,
 				3DD7EBED1B784F380042CC1D /* ParkingViewController.swift */,
 				3DD7EBE71B784E5D0042CC1D /* MainViewController.swift */,
@@ -233,9 +236,10 @@
 				3DD7EBEC1B784F230042CC1D /* TicketsViewController.swift in Sources */,
 				3DD7EBEE1B784F380042CC1D /* ParkingViewController.swift in Sources */,
 				3DD7EBF01B784F7B0042CC1D /* ArtistSearchViewController.swift in Sources */,
+				3DD7EBF81B7860850042CC1D /* ActivityDetailViewController.swift in Sources */,
 				3DD7EBE81B784E5D0042CC1D /* MainViewController.swift in Sources */,
 				3DD7EBF21B784F880042CC1D /* ArtistDetailViewController.swift in Sources */,
-				3DD7EBF61B785B800042CC1D /* ActivitiesViewController.swift in Sources */,
+				3DD7EBF61B785B800042CC1D /* ActivityViewController.swift in Sources */,
 				3DD7EBC81B783E5D0042CC1D /* AppDelegate.swift in Sources */,
 				3DD7EBEA1B784EDA0042CC1D /* MapViewController.swift in Sources */,
 			);

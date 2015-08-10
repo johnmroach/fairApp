@@ -1,14 +1,14 @@
 //
-//  EventSearchViewController.swift
-//  
+//  ActivityDetailViewController.swift
+//  fairApp
 //
-//  Created by John Roach on 8/9/15.
-//
+//  Created by John Roach on 8/10/15.
+//  Copyright (c) 2015 penrod. All rights reserved.
 //
 
 import UIKit
 
-class EventSearchViewController: UIViewController {
+class ActivityDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

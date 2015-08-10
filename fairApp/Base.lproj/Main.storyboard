@@ -90,7 +90,7 @@
         <!--Activities-->
         <scene sceneID="C9k-5X-CYP">
             <objects>
-                <viewController id="gki-rD-JTs" customClass="ActivitiesViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gki-rD-JTs" customClass="ActivityViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KRz-dV-nAv"/>
                         <viewControllerLayoutGuide type="bottom" id="kA3-MO-Ya3"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="153" y="1559"/>
         </scene>
-        <!--Event Detail View Controller-->
+        <!--Artist Detail View Controller-->
         <scene sceneID="WcD-DK-rRn">
             <objects>
-                <viewController id="Gmd-Tc-ZQf" customClass="EventDetailViewController" sceneMemberID="viewController">
+                <viewController id="Gmd-Tc-ZQf" customClass="ArtistDetailViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bto-3F-MVw"/>
                         <viewControllerLayoutGuide type="bottom" id="GnR-Q3-HiJ"/>

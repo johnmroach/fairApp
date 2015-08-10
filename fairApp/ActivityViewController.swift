@@ -1,5 +1,5 @@
 //
-//  ActivitiesViewController.swift
+//  ActivityViewController.swift
 //  fairApp
 //
 //  Created by John Roach on 8/10/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivitiesViewController: UIViewController {
+class ActivityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
