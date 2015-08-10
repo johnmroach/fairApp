@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3DD7EBC81B783E5D0042CC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBC71B783E5D0042CC1D /* AppDelegate.swift */; };
-		3DD7EBCA1B783E5D0042CC1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBC91B783E5D0042CC1D /* ViewController.swift */; };
 		3DD7EBCD1B783E5D0042CC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD7EBCB1B783E5D0042CC1D /* Main.storyboard */; };
 		3DD7EBCF1B783E5D0042CC1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD7EBCE1B783E5D0042CC1D /* Images.xcassets */; };
 		3DD7EBD21B783E5D0042CC1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD7EBD01B783E5D0042CC1D /* LaunchScreen.xib */; };
 		3DD7EBDE1B783E5D0042CC1D /* fairAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBDD1B783E5D0042CC1D /* fairAppTests.swift */; };
+		3DD7EBE81B784E5D0042CC1D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBE71B784E5D0042CC1D /* MainViewController.swift */; };
+		3DD7EBEA1B784EDA0042CC1D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBE91B784EDA0042CC1D /* MapViewController.swift */; };
+		3DD7EBEC1B784F230042CC1D /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBEB1B784F230042CC1D /* TicketsViewController.swift */; };
+		3DD7EBEE1B784F380042CC1D /* ParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBED1B784F380042CC1D /* ParkingViewController.swift */; };
+		3DD7EBF01B784F7B0042CC1D /* ArtistSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBEF1B784F7B0042CC1D /* ArtistSearchViewController.swift */; };
+		3DD7EBF21B784F880042CC1D /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBF11B784F880042CC1D /* ArtistDetailViewController.swift */; };
+		3DD7EBF61B785B800042CC1D /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7EBF51B785B800042CC1D /* ActivitiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +35,19 @@
 		3DD7EBC21B783E5D0042CC1D /* fairApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fairApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD7EBC61B783E5D0042CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD7EBC71B783E5D0042CC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DD7EBC91B783E5D0042CC1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DD7EBCC1B783E5D0042CC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DD7EBCE1B783E5D0042CC1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3DD7EBD11B783E5D0042CC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3DD7EBD71B783E5D0042CC1D /* fairAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fairAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD7EBDC1B783E5D0042CC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD7EBDD1B783E5D0042CC1D /* fairAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fairAppTests.swift; sourceTree = "<group>"; };
+		3DD7EBE71B784E5D0042CC1D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3DD7EBE91B784EDA0042CC1D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3DD7EBEB1B784F230042CC1D /* TicketsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
+		3DD7EBED1B784F380042CC1D /* ParkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingViewController.swift; sourceTree = "<group>"; };
+		3DD7EBEF1B784F7B0042CC1D /* ArtistSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistSearchViewController.swift; sourceTree = "<group>"; };
+		3DD7EBF11B784F880042CC1D /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
+		3DD7EBF51B785B800042CC1D /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +89,14 @@
 		3DD7EBC41B783E5D0042CC1D /* fairApp */ = {
 			isa = PBXGroup;
 			children = (
-				3DD7EBC71B783E5D0042CC1D /* AppDelegate.swift */,
-				3DD7EBC91B783E5D0042CC1D /* ViewController.swift */,
 				3DD7EBCB1B783E5D0042CC1D /* Main.storyboard */,
-				3DD7EBCE1B783E5D0042CC1D /* Images.xcassets */,
-				3DD7EBD01B783E5D0042CC1D /* LaunchScreen.xib */,
+				3DD7EBF51B785B800042CC1D /* ActivitiesViewController.swift */,
+				3DD7EBF11B784F880042CC1D /* ArtistDetailViewController.swift */,
+				3DD7EBEF1B784F7B0042CC1D /* ArtistSearchViewController.swift */,
+				3DD7EBEB1B784F230042CC1D /* TicketsViewController.swift */,
+				3DD7EBED1B784F380042CC1D /* ParkingViewController.swift */,
+				3DD7EBE71B784E5D0042CC1D /* MainViewController.swift */,
+				3DD7EBE91B784EDA0042CC1D /* MapViewController.swift */,
 				3DD7EBC51B783E5D0042CC1D /* Supporting Files */,
 			);
 			path = fairApp;
@@ -90,6 +105,9 @@
 		3DD7EBC51B783E5D0042CC1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DD7EBC71B783E5D0042CC1D /* AppDelegate.swift */,
+				3DD7EBD01B783E5D0042CC1D /* LaunchScreen.xib */,
+				3DD7EBCE1B783E5D0042CC1D /* Images.xcassets */,
 				3DD7EBC61B783E5D0042CC1D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD7EBCA1B783E5D0042CC1D /* ViewController.swift in Sources */,
+				3DD7EBEC1B784F230042CC1D /* TicketsViewController.swift in Sources */,
+				3DD7EBEE1B784F380042CC1D /* ParkingViewController.swift in Sources */,
+				3DD7EBF01B784F7B0042CC1D /* ArtistSearchViewController.swift in Sources */,
+				3DD7EBE81B784E5D0042CC1D /* MainViewController.swift in Sources */,
+				3DD7EBF21B784F880042CC1D /* ArtistDetailViewController.swift in Sources */,
+				3DD7EBF61B785B800042CC1D /* ActivitiesViewController.swift in Sources */,
 				3DD7EBC81B783E5D0042CC1D /* AppDelegate.swift in Sources */,
+				3DD7EBEA1B784EDA0042CC1D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

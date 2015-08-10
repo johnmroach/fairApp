@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gdv-qe-2Fo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Artists-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ArtistSearchViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,340 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pv4-Y8-li2">
+                                <rect key="frame" x="16" y="130" width="568" height="462"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4tt-0x-wva">
+                                        <rect key="frame" x="8" y="8" width="552" height="446"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                </subviews>
+                            </scrollView>
+                            <searchBar contentMode="redraw" misplaced="YES" placeholder="search for artists" translatesAutoresizingMaskIntoConstraints="NO" id="m9S-hN-Qkz">
+                                <rect key="frame" x="16" y="72" width="568" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m9S-hN-Qkz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="6GF-IB-Bkn"/>
+                            <constraint firstItem="Pv4-Y8-li2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6gZ-NP-akn"/>
+                            <constraint firstItem="m9S-hN-Qkz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Ckg-EA-sXP"/>
+                            <constraint firstItem="m9S-hN-Qkz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bxP-as-dsE"/>
+                            <constraint firstItem="Pv4-Y8-li2" firstAttribute="top" secondItem="m9S-hN-Qkz" secondAttribute="bottom" constant="8" id="fx0-xv-iGh"/>
+                            <constraint firstItem="m9S-hN-Qkz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ihk-A7-h0n"/>
+                            <constraint firstItem="m9S-hN-Qkz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mBb-nu-kDa"/>
+                            <constraint firstItem="Pv4-Y8-li2" firstAttribute="top" secondItem="m9S-hN-Qkz" secondAttribute="bottom" constant="14" id="pGO-QY-ZHQ"/>
+                            <constraint firstItem="m9S-hN-Qkz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="szS-uR-AZx"/>
+                            <constraint firstItem="Pv4-Y8-li2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="vRD-vp-94s"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Artists" id="Fkp-iE-Sxw"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="NSa-Xi-4ns" id="K0M-ft-9Q0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="NSa-Xi-4ns">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="wUm-Eg-uUb"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="TyU-Ul-Ypw"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="aqA-eh-9Ft"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="QUN-dF-PeU"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="-1122" y="1559"/>
+        </scene>
+        <!--Event Map-->
+        <scene sceneID="d4c-2Y-JWr">
+            <objects>
+                <viewController id="gbj-0P-H50" customClass="MapViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ldz-Qd-2LH"/>
+                        <viewControllerLayoutGuide type="bottom" id="wjT-Pw-8Oj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6df-Xc-IMa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="o5f-h9-zn8">
+                                <rect key="frame" x="16" y="72" width="568" height="508"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event Map" id="ofe-HY-Eba"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTI-6C-mdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-485" y="1559"/>
+        </scene>
+        <!--Activities-->
+        <scene sceneID="C9k-5X-CYP">
+            <objects>
+                <viewController id="gki-rD-JTs" customClass="ActivitiesViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KRz-dV-nAv"/>
+                        <viewControllerLayoutGuide type="bottom" id="kA3-MO-Ya3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iaw-bJ-8bV" customClass="GLKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jr-xs-oKa">
+                                <rect key="frame" x="16" y="72" width="568" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activities" id="ba6-LN-Tro"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9e-cK-zkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="1559"/>
+        </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="WcD-DK-rRn">
+            <objects>
+                <viewController id="Gmd-Tc-ZQf" customClass="EventDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bto-3F-MVw"/>
+                        <viewControllerLayoutGuide type="bottom" id="GnR-Q3-HiJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VFQ-xS-qw2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="event detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OM-UE-M8H">
+                                <rect key="frame" x="16" y="28" width="568" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulN-Pa-zmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="2333"/>
+        </scene>
+        <!--Artist Detail View Controller-->
+        <scene sceneID="x7q-rW-CbH">
+            <objects>
+                <viewController id="NQO-V0-gbE" customClass="ArtistDetailViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D1V-x7-9lv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ggi-2c-S4l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Jh-0w-0iY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="artist detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn2-4q-Vox">
+                                <rect key="frame" x="16" y="50" width="568" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1a-nr-ORJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="2333"/>
+        </scene>
+        <!--Parking-->
+        <scene sceneID="RpZ-ag-fXO">
+            <objects>
+                <viewController id="M0u-6g-Ejd" customClass="ParkingViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G8P-QI-QIu"/>
+                        <viewControllerLayoutGuide type="bottom" id="af8-eP-aRj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2q8-kt-eOA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tmpMap" translatesAutoresizingMaskIntoConstraints="NO" id="7zS-0U-n8P">
+                                <rect key="frame" x="16" y="72" width="568" height="340"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iKd-J2-3YI" appends="YES" id="hbW-Wr-pbf"/>
+                                    <outletCollection property="gestureRecognizers" destination="Vq8-tB-4NK" appends="YES" id="eNG-YH-tZd"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Parking" id="IDO-1h-7dU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1q-RG-clZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="iKd-J2-3YI"/>
+                <tapGestureRecognizer id="Vq8-tB-4NK"/>
+            </objects>
+            <point key="canvasLocation" x="-1761" y="1559"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="CYG-99-qDt">
+            <objects>
+                <viewController id="19n-Cd-d4D" customClass="MainViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YvY-fd-hhH"/>
+                        <viewControllerLayoutGuide type="bottom" id="wMN-z4-h9t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j8O-gS-hSa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlQ-1o-rZ8">
+                                <rect key="frame" x="24" y="558" width="104" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Tickets">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vMD-9K-ADk" kind="show" id="1YB-Qk-T3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJ0-9U-Q3v">
+                                <rect key="frame" x="136" y="558" width="104" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Parking">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="M0u-6g-Ejd" kind="show" id="LFd-tt-Qww"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li8-W9-u5U">
+                                <rect key="frame" x="248" y="558" width="104" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Artists">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="MWK-tm-I4R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfc-C0-eGO">
+                                <rect key="frame" x="360" y="558" width="104" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gbj-0P-H50" kind="show" id="ba2-Ye-Bmp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EX-d1-SWt">
+                                <rect key="frame" x="472" y="558" width="104" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Activities">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gki-rD-JTs" kind="show" id="n9N-dL-UWM"/>
+                                </connections>
+                            </button>
+                            <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="penrodLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-6e-63b">
+                                <rect key="frame" x="76" y="72" width="448" height="448"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cBY-6e-63b" secondAttribute="height" multiplier="1:1" id="keC-EE-DQz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="height" secondItem="nfc-C0-eGO" secondAttribute="height" id="1q6-02-M0N"/>
+                            <constraint firstItem="nfc-C0-eGO" firstAttribute="leading" secondItem="li8-W9-u5U" secondAttribute="trailing" constant="8" id="1x0-fy-iVh"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="width" secondItem="TlQ-1o-rZ8" secondAttribute="width" id="3SY-EQ-zQb"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="height" secondItem="TlQ-1o-rZ8" secondAttribute="height" id="3wd-M7-G0n"/>
+                            <constraint firstItem="wMN-z4-h9t" firstAttribute="top" secondItem="RJ0-9U-Q3v" secondAttribute="bottom" constant="8" id="EjS-z3-T3S"/>
+                            <constraint firstItem="5EX-d1-SWt" firstAttribute="leading" secondItem="nfc-C0-eGO" secondAttribute="trailing" constant="8" id="HWb-na-SPl"/>
+                            <constraint firstItem="wMN-z4-h9t" firstAttribute="top" secondItem="TlQ-1o-rZ8" secondAttribute="bottom" constant="8" id="PPQ-hx-bFy"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="width" secondItem="5EX-d1-SWt" secondAttribute="width" id="SQR-5v-qkz"/>
+                            <constraint firstItem="RJ0-9U-Q3v" firstAttribute="leading" secondItem="TlQ-1o-rZ8" secondAttribute="trailing" constant="8" id="Ujg-1T-Z7j"/>
+                            <constraint firstItem="TlQ-1o-rZ8" firstAttribute="leading" secondItem="j8O-gS-hSa" secondAttribute="leadingMargin" constant="8" id="Uwx-t8-e52"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cBY-6e-63b" secondAttribute="trailing" constant="60" id="VLz-MV-wxb"/>
+                            <constraint firstItem="wMN-z4-h9t" firstAttribute="top" secondItem="5EX-d1-SWt" secondAttribute="bottom" constant="8" id="W9h-R5-Fl8"/>
+                            <constraint firstItem="cBY-6e-63b" firstAttribute="top" secondItem="YvY-fd-hhH" secondAttribute="bottom" constant="8" id="ZhR-DT-0xx"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="width" secondItem="RJ0-9U-Q3v" secondAttribute="width" id="aPw-4T-qcr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5EX-d1-SWt" secondAttribute="trailing" constant="8" id="bCM-gT-dSN"/>
+                            <constraint firstItem="cBY-6e-63b" firstAttribute="leading" secondItem="j8O-gS-hSa" secondAttribute="leadingMargin" constant="60" id="dgT-xm-nBM"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="height" secondItem="5EX-d1-SWt" secondAttribute="height" id="e0X-F0-fhX"/>
+                            <constraint firstItem="wMN-z4-h9t" firstAttribute="top" secondItem="nfc-C0-eGO" secondAttribute="bottom" constant="8" id="eG6-76-e1h"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="height" secondItem="RJ0-9U-Q3v" secondAttribute="height" id="fWY-vn-BCd"/>
+                            <constraint firstItem="wMN-z4-h9t" firstAttribute="top" secondItem="li8-W9-u5U" secondAttribute="bottom" constant="8" id="nXH-ih-tJx"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="leading" secondItem="RJ0-9U-Q3v" secondAttribute="trailing" constant="8" id="oOR-Kn-67Q"/>
+                            <constraint firstItem="li8-W9-u5U" firstAttribute="width" secondItem="nfc-C0-eGO" secondAttribute="width" id="wZb-Rl-aPm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ZA-rU-Zgt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FIv-bh-J12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-789" y="717"/>
+        </scene>
+        <!--Tickets-->
+        <scene sceneID="IqW-tu-Vfc">
+            <objects>
+                <viewController id="vMD-9K-ADk" customClass="TicketsViewController" customModule="fairApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ax2-lx-Qan"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ngr-f8-NmW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i0n-ZQ-HqF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSt-xB-ndv">
+                                <rect key="frame" x="40" y="87" width="370" height="272"/>
+                                <string key="text">Join us for the 49th annual The Penrod Arts Fair.
+When: Saturday, September 12th, 2015
+Time: 9:00am – 5:00pm
+Where: On the campus of the Indianapolis Museum of Art
+Tickets are also available for purchase at Marsh Supermarkets, MainStreet Markets, The National Bank of Indianapolis, the IMA, and Hubbard and Cravens.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tickets" id="MVU-iv-VC1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tq-H2-jjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2417" y="1559"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZuW-Mi-LhQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gdv-qe-2Fo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g7r-6O-vq5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="19n-Cd-d4D" kind="relationship" relationship="rootViewController" id="6jS-oV-BnD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3g-CR-JG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1601" y="717"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="penrodLogo" width="432" height="432"/>
+        <image name="tmpMap" width="600" height="315"/>
+    </resources>
 </document>
