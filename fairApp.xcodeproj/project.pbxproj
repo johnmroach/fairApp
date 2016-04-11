@@ -177,6 +177,7 @@
 		3DD7EBBA1B783E5D0042CC1D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = penrod;
 				TargetAttributes = {
@@ -439,6 +440,7 @@
 				3DD7EBE31B783E5D0042CC1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DD7EBE41B783E5D0042CC1D /* Build configuration list for PBXNativeTarget "fairAppTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +449,7 @@
 				3DD7EBE61B783E5D0042CC1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

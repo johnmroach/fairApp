@@ -22,6 +22,7 @@ class ArtistSearchViewController: UIViewController {
     }
     
 
+    
     /*
     // MARK: - Navigation
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gdv-qe-2Fo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gdv-qe-2Fo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -49,6 +50,7 @@
                     <navigationItem key="navigationItem" title="Artists" id="Fkp-iE-Sxw"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="NSa-Xi-4ns" id="K0M-ft-9Q0"/>
+                        <outlet property="tmp" destination="m9S-hN-Qkz" id="Vir-vv-DHz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -259,7 +261,7 @@
                                     <segue destination="gki-rD-JTs" kind="show" id="n9N-dL-UWM"/>
                                 </connections>
                             </button>
-                            <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="penrodLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-6e-63b">
+                            <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="penrodLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-6e-63b">
                                 <rect key="frame" x="76" y="72" width="448" height="448"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cBY-6e-63b" secondAttribute="height" multiplier="1:1" id="keC-EE-DQz"/>

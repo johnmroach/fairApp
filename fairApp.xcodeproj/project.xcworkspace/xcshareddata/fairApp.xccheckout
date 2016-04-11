@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6066DC64-9CA4-4C04-BF5C-5EB97C0AF170</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fairApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7ADA71EAA2A39B8CEE239B09B6ED5529B81ED3AB</key>
+		<string>https://github.com/johnmroach/fairApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>fairApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7ADA71EAA2A39B8CEE239B09B6ED5529B81ED3AB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/johnmroach/fairApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7ADA71EAA2A39B8CEE239B09B6ED5529B81ED3AB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7ADA71EAA2A39B8CEE239B09B6ED5529B81ED3AB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fairApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
